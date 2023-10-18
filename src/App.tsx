@@ -1,24 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import TestProps from './components/TestProps'
+import Counter from './components/Counter';
+import EmployeeData from './components/Data';
+import InputFocus from './components/Input';
+import TestCss1 from './components/TestCss1';
+import TestCss2 from './components/TestCss2';
+import TestEvents from './components/TestEvents'
+
+import TestAsyncAwait from './components/TestAsyncAwait'
+import TestInterface from './components/TestInterface';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <TestProps text="Hello World!"/>
+      <Counter/>
+      {/* <EmployeeData/> */}
+      <InputFocus/>
+      <TestCss1/>
+      <TestCss2/>
+      <TestEvents/>
+      <TestInterface/>
+      <TestAsyncAwait/>
     </div>
   );
 }
